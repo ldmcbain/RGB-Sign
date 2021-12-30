@@ -2,7 +2,7 @@ This PCB was created in KiCad v5.1.10
 
 I generated the PCB using a standard 5W laser.  Here are my steps to do so if you are so inclined:
 
-Like all things, follow these steps at your own risk.  This process involves toxic chemicals, soldering, etc and you must follow proper safety precautions if attempthing.  If you are not comfortable with the equipment/process, don't do it.
+Like all things, follow these steps at your own risk.  This process involves toxic chemicals, soldering, etc and you must follow proper safety precautions if attempting.  If you are not comfortable with the equipment/process, don't do it.
 
 **KiCad Design**
   Min Trace Width: 0.4mm
