@@ -1,0 +1,206 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32-DEVKITC-32D:ESP32-DEVKITC-32D U2
+U 1 1 6110DE41
+P 3700 3000
+F 0 "U2" H 3700 4167 50  0000 C CNN
+F 1 "ESP32-DEVKITC-32D" H 3700 4076 50  0000 C CNN
+F 2 "esp32:MODULE_ESP32-DEVKITC-32D" H 3700 3000 50  0001 L BNN
+F 3 "" H 3700 3000 50  0001 L BNN
+F 4 "4" H 3700 3000 50  0001 L BNN "PARTREV"
+F 5 "Espressif Systems" H 3700 3000 50  0001 L BNN "MANUFACTURER"
+	1    3700 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 2750 3500 0    50   Input ~ 0
+R_1
+Text GLabel 2750 3100 0    50   Input ~ 0
+R_2
+Text GLabel 4650 3400 2    50   Input ~ 0
+R_3
+Wire Wire Line
+	4650 3400 4500 3400
+Wire Wire Line
+	2900 3500 2750 3500
+Wire Wire Line
+	2900 3100 2750 3100
+Text GLabel 2750 3300 0    50   Input ~ 0
+G_1
+Text GLabel 2750 3000 0    50   Input ~ 0
+G_2
+Text GLabel 4650 3500 2    50   Input ~ 0
+G_3
+Wire Wire Line
+	4650 3500 4500 3500
+Wire Wire Line
+	2750 3300 2900 3300
+Wire Wire Line
+	2750 3000 2900 3000
+Text GLabel 2750 3200 0    50   Input ~ 0
+B_1
+Text GLabel 2750 2900 0    50   Input ~ 0
+B_2
+Text GLabel 4650 3600 2    50   Input ~ 0
+B_3
+Wire Wire Line
+	4650 3600 4500 3600
+Wire Wire Line
+	2750 3200 2900 3200
+Wire Wire Line
+	2750 2900 2900 2900
+Text GLabel 2750 2700 0    50   Input ~ 0
+W_2
+Text GLabel 4650 3200 2    50   Input ~ 0
+W_3
+Text GLabel 4650 3100 2    50   Input ~ 0
+W_1
+Wire Wire Line
+	4650 3100 4500 3100
+Wire Wire Line
+	4500 3200 4650 3200
+Wire Wire Line
+	2750 2700 2900 2700
+Text GLabel 2750 3900 0    50   Input ~ 0
+5V
+Wire Wire Line
+	2900 3900 2850 3900
+$Comp
+L power:GND #PWR0126
+U 1 1 61110A66
+P 4700 2150
+F 0 "#PWR0126" H 4700 1900 50  0001 C CNN
+F 1 "GND" H 4705 1977 50  0000 C CNN
+F 2 "" H 4700 2150 50  0001 C CNN
+F 3 "" H 4700 2150 50  0001 C CNN
+	1    4700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 61111066
+P 4700 2700
+F 0 "#PWR0127" H 4700 2450 50  0001 C CNN
+F 1 "GND" H 4705 2527 50  0000 C CNN
+F 2 "" H 4700 2700 50  0001 C CNN
+F 3 "" H 4700 2700 50  0001 C CNN
+	1    4700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 611111AB
+P 2450 3400
+F 0 "#PWR0128" H 2450 3150 50  0001 C CNN
+F 1 "GND" H 2455 3227 50  0000 C CNN
+F 2 "" H 2450 3400 50  0001 C CNN
+F 3 "" H 2450 3400 50  0001 C CNN
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3400 2450 3400
+Wire Wire Line
+	4700 2700 4500 2700
+Wire Wire Line
+	4700 2150 4700 2100
+Wire Wire Line
+	4700 2100 4500 2100
+$Comp
+L dk_DC-DC-Converters:V7805-500 U1
+U 1 1 61116478
+P 2100 4550
+F 0 "U1" H 2100 4937 60  0000 C CNN
+F 1 "V7805-500" H 2100 4831 60  0000 C CNN
+F 2 "digikey-footprints:3-SIP_Module_V7805-500" H 2300 4750 60  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/v78-500.pdf" H 2300 4850 60  0001 L CNN
+F 4 "102-1709-ND" H 2300 4950 60  0001 L CNN "Digi-Key_PN"
+F 5 "V7805-500" H 2300 5050 60  0001 L CNN "MPN"
+F 6 "Power Supplies - Board Mount" H 2300 5150 60  0001 L CNN "Category"
+F 7 "DC DC Converters" H 2300 5250 60  0001 L CNN "Family"
+F 8 "https://www.cui.com/product/resource/digikeypdf/v78-500.pdf" H 2300 5350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cui-inc/V7805-500/102-1709-ND/1828602" H 2300 5450 60  0001 L CNN "DK_Detail_Page"
+F 10 "DC DC CONVERTER 5V 2.5W" H 2300 5550 60  0001 L CNN "Description"
+F 11 "CUI Inc." H 2300 5650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2300 5750 60  0001 L CNN "Status"
+	1    2100 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4450 2750 4450
+Wire Wire Line
+	2850 4450 2850 3900
+Connection ~ 2850 3900
+Wire Wire Line
+	2850 3900 2750 3900
+$Comp
+L power:GND #PWR0129
+U 1 1 611180FD
+P 2100 4850
+F 0 "#PWR0129" H 2100 4600 50  0001 C CNN
+F 1 "GND" H 2105 4677 50  0000 C CNN
+F 2 "" H 2100 4850 50  0001 C CNN
+F 3 "" H 2100 4850 50  0001 C CNN
+	1    2100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0130
+U 1 1 611185B6
+P 1700 4450
+F 0 "#PWR0130" H 1700 4300 50  0001 C CNN
+F 1 "+24V" H 1715 4623 50  0000 C CNN
+F 2 "" H 1700 4450 50  0001 C CNN
+F 3 "" H 1700 4450 50  0001 C CNN
+	1    1700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61118DEC
+P 1700 4600
+F 0 "C1" H 1815 4646 50  0000 L CNN
+F 1 "10u" H 1815 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1738 4450 50  0001 C CNN
+F 3 "~" H 1700 4600 50  0001 C CNN
+	1    1700 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 4450
+$Comp
+L Device:C C2
+U 1 1 611193B6
+P 2750 4600
+F 0 "C2" H 2865 4646 50  0000 L CNN
+F 1 "22u" H 2865 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 2788 4450 50  0001 C CNN
+F 3 "~" H 2750 4600 50  0001 C CNN
+	1    2750 4600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 4450
+Wire Wire Line
+	2750 4450 2850 4450
+Wire Wire Line
+	1700 4750 1700 4850
+Wire Wire Line
+	1700 4850 2100 4850
+Connection ~ 2100 4850
+Wire Wire Line
+	2100 4850 2750 4850
+Wire Wire Line
+	2750 4850 2750 4750
+$EndSCHEMATC
